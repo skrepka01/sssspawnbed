@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id "com.github.johnrengelman.shadow" version "8.1.1"
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io/' }
+}
+
+dependencies {
+    compileOnly group: 'com.github.Minestom', name: 'Minestom', version: '51ef4779c'
+}
+
+jar {
+    manifest {
+        // Change this to your main class
+        attributes 'Main-Class': 'org.example.Main'
+    }
+}
+
+compileJava.options.encoding = 'UTF-8'
+
