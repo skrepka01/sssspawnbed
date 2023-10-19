@@ -12,7 +12,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly group: 'com.github.Minestom', name: 'Minestom', version: '51ef4779c'
+    implementation group: 'com.github.Minestom', name: 'Minestom', version: '51ef4779c'
 }
 
 jar {
